@@ -69,7 +69,9 @@ class Game:
 
     def is_winner(self, squares):
         squares = set(squares)
-        if {1,4,7}.issubset(squares) or {2,5,8}.issubset(squares) or {3,6,9}.issubset(squares) or {1,2,3}.issubset(squares) or {4, 5, 6}.issubset(squares) or {7,8,9}.issubset(squares) or {1,5,9}.issubset(squares) or {3,5,7}.issubset(squares):
+        if {1,4,7}.issubset(squares) or {2,5,8}.issubset(squares) or {3,6,9}.issubset(squares)
+                or {1,2,3}.issubset(squares) or {4, 5, 6}.issubset(squares) or {7,8,9}.issubset(squares) 
+                or {1,5,9}.issubset(squares) or {3,5,7}.issubset(squares):
             return True
         return False
 
